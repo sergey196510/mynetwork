@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QTableView>
+#include "listdevtypesmodel.h"
 
 class listDevTypes : public QTableView
 {

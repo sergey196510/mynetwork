@@ -15,10 +15,10 @@ myNetwork::myNetwork(QWidget *parent)
     if (dbname != nullptr)
         openDb();
 
-    listDevices *ld = new listDevices;
-    this->setCentralWidget(ld);
+    listdevices();
 
     connect(ui->actionQuit, SIGNAL(triggered(bool)), qApp, SLOT(quit()));
+    connect(ui->actionDevices, SIGNAL(triggered(bool)), SLOT(listdevices()));
     connect(ui->actionDevice_types, SIGNAL(triggered(bool)), SLOT(listdevtypes()));
 }
 
@@ -56,6 +56,12 @@ bool myNetwork::openDb()
 
 void myNetwork::settings()
 {
+}
+
+void myNetwork::listdevices()
+{
+    listDevices *ld = new listDevices;
+    this->setCentralWidget(ld);
 }
 
 void myNetwork::listdevtypes()

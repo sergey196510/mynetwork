@@ -23,6 +23,7 @@ public:
 
 public slots:
     void settings();
+    void listdevices();
     void listdevtypes();
 
 private:

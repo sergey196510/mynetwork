@@ -13,6 +13,7 @@ SOURCES += \
     listdevicemodel.cpp \
     listdevices.cpp \
     listdevtypes.cpp \
+    listdevtypesmodel.cpp \
     main.cpp \
     mynetwork.cpp
 
@@ -21,6 +22,7 @@ HEADERS += \
     listdevicemodel.h \
     listdevices.h \
     listdevtypes.h \
+    listdevtypesmodel.h \
     mynetwork.h
 
 FORMS += \
