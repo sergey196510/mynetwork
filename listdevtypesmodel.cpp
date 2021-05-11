@@ -2,17 +2,17 @@
 
 listDevTypesModel::listDevTypesModel(QObject *parent) : QAbstractTableModel(parent)
 {
-
+    headers << "Name" << "Description";
 }
 
-int listDevTypesModel::rowCount(const QModelIndex &parent) const
+int listDevTypesModel::rowCount(const QModelIndex &) const
 {
-    return 0;
+    return list.size();
 }
 
 int listDevTypesModel::columnCount(const QModelIndex &) const
 {
-    return 0;
+    return headers.size();
 }
 
 QVariant listDevTypesModel::data(const QModelIndex &index, int role) const

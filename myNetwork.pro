@@ -9,6 +9,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    editdevicetype.cpp \
     listdevicedata.cpp \
     listdevicemodel.cpp \
     listdevices.cpp \
@@ -18,6 +19,7 @@ SOURCES += \
     mynetwork.cpp
 
 HEADERS += \
+    editdevicetype.h \
     listdevicedata.h \
     listdevicemodel.h \
     listdevices.h \
@@ -26,6 +28,7 @@ HEADERS += \
     mynetwork.h
 
 FORMS += \
+    editdevicetype.ui \
     mynetwork.ui
 
 # Default rules for deployment.
